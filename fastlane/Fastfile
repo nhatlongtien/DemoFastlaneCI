@@ -44,4 +44,19 @@ platform :ios do
         skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution]
       )
     end
+    
+    desc "Build app in local"
+    lane :build_local do
+    	build_ios_app(
+        scheme: "DemoFastlaneCI", 
+      	workspace: "DemoFastlaneCI.xcworkspace",
+      	configuration: "Debug", 
+      	export_method: "development",
+	      output_directory: "./build",
+	      output_name: "Deme_create_ipa_from_fastlane",
+	      silent: true,
+	      clean: true
+    	)
+  	
+      
 end
