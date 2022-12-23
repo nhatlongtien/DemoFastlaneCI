@@ -57,6 +57,6 @@ platform :ios do
 	      silent: true,
 	      clean: true
     	)
-  	
+  	end
       
 end
