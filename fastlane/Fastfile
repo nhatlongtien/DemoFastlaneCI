@@ -52,6 +52,7 @@ platform :ios do
       	workspace: "DemoFastlaneCI.xcworkspace",
       	configuration: "Debug", 
       	export_method: "development",
+        xcargs: "-allowProvisioningUpdates",
 	      output_directory: "./build",
 	      output_name: "Deme_create_ipa_from_fastlane",
 	      silent: true,
