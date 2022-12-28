@@ -53,16 +53,8 @@ platform :ios do
       	configuration: "Debug", 
       	export_method: "development",
         xcargs: "-allowProvisioningUpdates",
-	      output_directory: "./build",
-	      output_name: "Deme_create_ipa_from_fastlane",
 	      silent: true,
 	      clean: true
     	)
   	end
-
-    desc "Make build Folder"
-      private_lane :make_build_foder do 
-      sh "mkdir -p ./build" 
-     end
-      
 end
