@@ -47,7 +47,8 @@ platform :ios do
     
     desc "Build app in local"
     lane :build_local do
-    	build_ios_app(
+      setup_ci if ENV['CI']
+    	build_app(
         scheme: "DemoFastlaneCI", 
       	workspace: "DemoFastlaneCI.xcworkspace",
       	configuration: "Debug", 
