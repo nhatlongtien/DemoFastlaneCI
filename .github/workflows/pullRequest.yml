@@ -48,5 +48,5 @@ jobs:
       - name: Run Tests (Cache)
         if: steps.setup.outputs.cache-hit == 'true'
         run: bundle exec fastlane unit_test skip_package_dependencies_resolution:true
-      - name: Build IPA File
-        run: fastlane build_local
+      - name: Build App
+        run: fastlane buildApp

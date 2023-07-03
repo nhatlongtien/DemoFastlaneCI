@@ -42,6 +42,17 @@ platform :ios do
 	lane :push_to_git do 
 		push_to_git_remote
 	end
+
+	desc "Build app"
+	lane :buildApp do
+		gym(
+		  scheme: "DemoFastlaneCI",
+		  workspace: "DemoFastlaneCI.xcworkspace",
+		  export_method: 'development',
+		  clean: true
+	  )
+   
+	end
 end
 
 
