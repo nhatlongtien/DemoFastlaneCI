@@ -15,6 +15,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
+### ios unit_test
+
+```sh
+[bundle exec] fastlane ios unit_test
+```
+
+Builds project and executes unit tests
+
 ### ios build_local
 
 ```sh
@@ -22,6 +30,14 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 ```
 
 Build app in local
+
+### ios push_to_git
+
+```sh
+[bundle exec] fastlane ios push_to_git
+```
+
+Push to git
 
 ----
 
