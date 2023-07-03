@@ -14,7 +14,7 @@
 # update_fastlane
 
  default_platform(:ios)
-
+ 
 # platform :ios do
 #   desc "Build app in local"
 #   lane :build_local do
@@ -59,3 +59,5 @@ platform :ios do
     	)
   	end
 end
+
+
