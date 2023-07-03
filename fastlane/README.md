@@ -23,14 +23,6 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 Build app in local
 
-### ios build_local
-
-```sh
-[bundle exec] fastlane ios build_local
-```
-
-Build app in local
-
 ----
 
 This README.md is auto-generated and will be re-generated every time [_fastlane_](https://fastlane.tools) is run.
